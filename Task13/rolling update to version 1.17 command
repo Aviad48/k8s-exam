@@ -1,0 +1,15 @@
+## rolling update to version 1.17###
+#####################################
+kubectl set image deployment/nginx-deploy nginx-container=nginx:1.17 --record
+=============================================================================
+##Check the deployment status##
+###############################
+kubectl rollout status deployment/nginx-deploy
+===============================================
+
+##Verify the deployment and check the annotations##
+###################################################
+kubectl describe deployment nginx-deploy
+===============================================
+
+
