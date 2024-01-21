@@ -1,0 +1,10 @@
+#  locate the yaml file in /etc/kubernetes/manifests
+# 
+#
+# Restart the kubelet by the following commant:
+
+sudo systemctl restart kubelet
+
+
+
+

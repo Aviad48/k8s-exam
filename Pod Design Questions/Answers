@@ -1,0 +1,9 @@
+#1 kubectl get pods --show-labels
+#Apply the yaml file "Questions-2.yaml"
+#3 kubectl get pods --show-labels
+
+ 
+
+
+
+
