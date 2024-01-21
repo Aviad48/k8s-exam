@@ -56,8 +56,51 @@
 #3 kubectl get replicaset -l app=webapp
 #kubectl get rs
 
-#4 kubectl get replicaset -l app=webapp -o yaml > replicaset.yaml
-#  kubectl get pods -l app=webapp -o yaml > pods.yaml
+#4 kubectl get replicaset -l app=webapp -o yaml > replicaset.yaml (Yaml file is in the folder by name replicaset.yaml )
+#  kubectl get pods -l app=webapp -o yaml > pods.yaml (Yaml file is in the folder by name pods.yaml)
+
+
+#5 kubectl delete deployment webapp --cascade=true --wait=true
+
+#6 apply yaml file eploy-nginx-1.17.1.yaml
+
+#7 kubectl set image deployment webapp nginx=nginx:1.17.4
+# kubectl rollout status deployment webapp
+
+#8 kubectl rollout history deployment webapp
+
+#9 kubectl rollout undo deployment webapp
+#  kubectl rollout status deployment webapp
+# kubectl get deployment webapp -o=jsonpath='{.spec.template.spec.containers[0].image}' && echo
+
+#10 kubectl set image deployment webapp nginx=nginx:1.100
+# kubectl get pods
+# kubectl rollout undo deployment webapp
+# kubectl rollout status deployment webapp
+# kubectl get pods
+# kubectl rollout history deploy webapp --revision=4 (outpot in history revision.txt file)
+# kubectl set image deployment webapp nginx=nginx:latest
+# kubectl rollout history deploy webapp --revision=6
+
+
+
+
+#11 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
