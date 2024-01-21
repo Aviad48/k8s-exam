@@ -41,7 +41,27 @@
 #18  kubectl get pod nginx -o wide
 # kubectl describe pod nginx | grep "Node-Selectors"
 
-#19 
+#################
+# Deployments: 
+#################
+
+
+#1 Apply deployment-nginx.yaml 
+
+# kubectl create deploy webapp --image=nginx --dry-run=client -o yaml > webapp.yaml
+#  sed -i 's/replicas: 1/replicas: 5/' webapp.yaml
+
+#2 kubectl rollout status deployment/webapp
+
+#3 kubectl get replicaset -l app=webapp
+#kubectl get rs
+
+#4 kubectl get replicaset -l app=webapp -o yaml > replicaset.yaml
+#  kubectl get pods -l app=webapp -o yaml > pods.yaml
+
+
+
+
 
 
 
