@@ -1,0 +1,57 @@
+#1 kubectl get pods --show-labels
+
+#2 Apply the yaml file "Questions-2.yaml"
+
+#3 kubectl get pods --show-labels
+
+#4 kubectl get pods -l env=dev
+
+
+#5 kubectl get pods -l env=dev -o custom-columns=NAME:.metadata.name,LABELS:.metadata.labels
+
+#6  kubectl get pods -l env=prod --show-labels
+
+#7 kubectl get pods -l env=prod -o custom-columns=NAME:.metadata.name,LABELS:.metadata.labels
+
+#8 kubectl get pods -l env --show-labels
+
+#9 kubectl get pods -l 'env in (dev,prod)' --show-labels
+
+#10 kubectl get pods -l 'env in (dev,prod)' --no-headers -o custom-columns=LABELS:.metadata.labels
+
+
+#11 kubectl label pod nginx-prod-1 env=uat --overwrite
+#kubectl get pods --show-labels
+
+#12 kubectl label pods -l 'env in (dev,prod,uat)' env-
+#kubectl get pods --show-labels
+
+#13 kubectl label pods --all app=nginx
+#kubectl get pods --show-labels
+
+#14 kubectl get nodes --show-labels
+
+#15 kubectl label node <node-name> nodeName=nginxnode
+
+
+#16 apply yaml file "question16.yaml" by kubectl apply -f question16.yaml
+
+#17 kubectl get pod nginx  -o wide
+
+#18  kubectl get pod nginx -o wide
+# kubectl describe pod nginx | grep "Node-Selectors"
+
+#19 
+
+
+
+
+
+
+
+
+
+
+
+
+
