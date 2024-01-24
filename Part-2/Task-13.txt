@@ -1,0 +1,2 @@
+kubectl label pods --all app=nginx
+#kubectl get pods --show-labels

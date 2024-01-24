@@ -1,0 +1,27 @@
+#see the status of the job
+kubectl get jobs -w
+
+
+
+NAME        COMPLETIONS   DURATION   AGE
+hello-job   1/10          4s         4s
+hello-job   1/10          7s         7s
+hello-job   2/10          7s         7s
+hello-job   2/10          10s        10s
+hello-job   3/10          10s        10s
+hello-job   3/10          13s        13s
+hello-job   4/10          13s        13s
+hello-job   4/10          14s        14s
+hello-job   4/10          16s        16s
+hello-job   4/10          17s        17s
+hello-job   5/10          17s        17s
+hello-job   5/10          20s        20s
+hello-job   6/10          20s        20s
+hello-job   6/10          23s        23s
+hello-job   7/10          23s        23s
+hello-job   7/10          26s        26s
+hello-job   8/10          26s        26s
+hello-job   8/10          29s        29s
+hello-job   9/10          29s        29s
+hello-job   9/10          32s        32s
+hello-job   10/10         32s        32s

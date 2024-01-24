@@ -1,0 +1,6 @@
+
+#Export the yaml of the replicasets
+kubectl get replicaset -l app=webapp -o yaml > replicaset.yaml
+
+#export the yaml of the  pods
+kubectl get pods -l app=webapp -o yaml > pods.yaml

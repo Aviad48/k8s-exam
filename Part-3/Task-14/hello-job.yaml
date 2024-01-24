@@ -1,0 +1,15 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: hello-job
+spec:
+  completions: 10
+  template:
+    metadata:
+      name: hello-job
+    spec:
+      containers:
+      - name: busybox
+        image: busybox
+        command: ["echo", "Hello I am from job"]
+      restartPolicy: OnFailure

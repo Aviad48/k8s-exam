@@ -1,0 +1,4 @@
+
+kubectl get replicaset -l app=webapp
+
+kubectl get rs

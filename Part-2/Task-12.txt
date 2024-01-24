@@ -1,0 +1,2 @@
+kubectl label pods -l 'env in (dev,prod,uat)' env-
+kubectl get pods --show-labels

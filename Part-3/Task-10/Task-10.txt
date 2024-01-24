@@ -1,0 +1,20 @@
+kubectl set image deployment webapp nginx=nginx:1.100
+
+kubectl get pods
+NAME                            READY   STATUS         RESTARTS   AGE
+webapp-665c6949b7-6q29s         1/1     Running        0          2m27s
+webapp-5b59bd94c7-fsvmw         0/1     ErrImagePull   0          8s
+
+
+#Part A
+kubectl rollout undo deployment webapp
+kubectl rollout status deployment webapp
+kubectl get pods
+
+Part B+C
+kubectl rollout history deploy webapp --revision=4 (outpot in history-revision.txt file)
+
+
+#Part D
+kubectl set image deployment webapp nginx=nginx:latest
+kubectl rollout history deploy webapp --revision=6

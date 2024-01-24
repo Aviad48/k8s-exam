@@ -1,0 +1,2 @@
+kubectl get pod nginx -o wide
+kubectl describe pod nginx | grep "Node-Selectors"

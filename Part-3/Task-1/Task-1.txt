@@ -1,0 +1,5 @@
+#create the Yaml
+kubectl create deploy webapp --image=nginx --dry-run=client -o yaml > webapp.yaml
+
+#update   the replica to 5
+sed -i 's/replicas: 1/replicas: 5/' webapp.yaml

@@ -1,0 +1,5 @@
+# Delete the HorizontalPodAutoscaler (HPA)
+   kubectl delete hpa webapp-hpa
+
+# Delete the Deployment
+   kubectl delete deployment webapp

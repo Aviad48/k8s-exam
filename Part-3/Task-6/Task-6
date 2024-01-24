@@ -1,0 +1,1 @@
+kubectl run webapp --image=nginx:1.17.1 --port=80
